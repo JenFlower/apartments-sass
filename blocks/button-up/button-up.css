@@ -1,0 +1,35 @@
+.button-up {
+  display: none;
+  background-color: #95D0A1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button-up::before {
+  background-image: url("../../images/button-up.svg");
+  display: block;
+  content: '';
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 10px;
+  margin: 0 auto;
+}
+
+.button-up:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: .5;
+}
+
+.button-up_show {
+  display: block;
+}

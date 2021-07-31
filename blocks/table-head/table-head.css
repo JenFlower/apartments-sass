@@ -1,0 +1,98 @@
+.table-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 2fr  1fr 1fr 1fr;
+      grid-template-columns: 100px 2fr  1fr 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: top;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .table-head {
+    -ms-grid-columns:  max-content max-content max-content max-content;
+        grid-template-columns:  -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-columns:  max-content max-content max-content max-content;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+.table-head__button-image:first-child {
+  margin: 5px 0 1px;
+  height: 4px;
+  background-image: url("../../../images/arrow-up.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+}
+
+.table-head__button-image:last-child {
+  margin: 1px 0 5px;
+  height: 4px;
+  background-repeat: no-repeat;
+  background-image: url("../../../images/arrow-down.svg");
+}
+
+.table-head__button-image:first-child:hover {
+  background-image: url("../../../images/arrow-up-green.svg");
+}
+
+.table-head__button-image:last-child:hover {
+  background-image: url("../../../images/arrow-down-green.svg");
+}
+
+.table-head__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 8px;
+}
+
+.table-head__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-head__item_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .table-head__item_hidden {
+    display: inline;
+  }
+}
+
+.table-head__item_inline {
+  display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+  .table-head__item_inline {
+    display: none;
+  }
+}
+
+.table-head__name {
+  margin: 0;
+}
+
+.table-head__name:hover {
+  color: #3EB57C;
+  cursor: pointer;
+}

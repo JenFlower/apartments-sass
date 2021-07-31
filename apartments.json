@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 5630500
+  },
+  {
+    "id": 2,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 1,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 6630500
+  },
+  {
+    "id": 3,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 2,
+    "area": 35.1,
+    "floor": 12,
+    "floors": 17,
+    "price": 5630500
+  },
+  {
+    "id": 4,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 1,
+    "area": 44.1,
+    "floor": 13,
+    "floors": 17,
+    "price": 5630500
+  },
+  {
+    "id": 5 ,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 3630500
+  },
+  {
+    "id": 6,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 53.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 2630500
+  },
+  {
+    "id": 7,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 5630500
+  },
+  {
+    "id": 8,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 5630500
+  },
+  {
+    "id": 9,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 18500500
+  },
+  {
+    "id": 10,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 18630500
+  },
+  {
+    "id": 11,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 6630500
+  },
+  {
+    "id": 12,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 3,
+    "area": 63.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 10000000
+  },
+  {
+    "id": 13,
+    "image": "images/apartment.svg",
+    "number": 104,
+    "rooms": 4,
+    "area": 110.1,
+    "floor": 1,
+    "floors": 17,
+    "price": 15630500
+  }
+]

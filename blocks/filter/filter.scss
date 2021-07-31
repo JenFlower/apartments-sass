@@ -1,0 +1,84 @@
+@import '../components';
+
+.filter {
+  background: linear-gradient(#AEE4B2, $green-color);
+  border-radius: $size-10;
+  padding: $size-40;
+  max-height: 372px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1200px) {
+    max-height: 318px;
+    padding: $size-20 19px;
+  }
+
+  &__range {
+    cursor: pointer;
+  }
+
+  &__range-block {
+    padding-bottom: $size-24;
+  }
+
+  &__range-title {
+    display: grid;
+    grid-template-columns: repeater(2, 1fr);
+    padding-top: $size-8;
+    padding-bottom: $size-12;
+
+    @media screen and (max-width: 1200px) {
+      font-size: $size-14;
+      line-height: $size-20;
+    }
+
+    &_from {
+      margin: 0;
+    }
+
+    &_to {
+      margin: 0;
+    }
+  }
+
+  &__room-button {
+    background-color: $white-color;
+    border: none;
+    border-radius: 50%;
+    width: $size-44;
+    height: $size-44;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+
+    &_active {
+      background-color: $green-color-active;
+      color: $white-color;
+      transition: all .5s;
+      box-shadow: 0 1px 28px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
+    }
+  }
+
+  &__room-buttons {
+    display: grid;
+    grid-template-columns: repeater(4, $size-44);
+    gap: 0 $size-16;
+    padding-bottom: $size-24;
+  }
+
+
+  &__title {
+    font-size: $size-14;
+    line-height: $size-20;
+    margin: 0;
+
+    @media screen and (max-width: 1200px) {
+      font-size: $size-13;
+      line-height: $size-18;
+    }
+  }
+}
+
+

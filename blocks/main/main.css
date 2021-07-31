@@ -1,0 +1,28 @@
+.main {
+  border-radius: 30%;
+  margin: 0 auto;
+  padding: 96px 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 400px;
+      grid-template-columns: auto 400px;
+  gap: 0 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    -ms-grid-columns: auto 318px;
+        grid-template-columns: auto 318px;
+    gap: 0 20px;
+    padding: 48px 54px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 48px 54px;
+  }
+}

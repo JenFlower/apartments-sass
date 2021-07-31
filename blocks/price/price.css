@@ -1,0 +1,9 @@
+.price {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .price {
+    display: inline;
+  }
+}

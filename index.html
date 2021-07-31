@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квартиры</title>
+  <link href="./node_modules/nouislider/dist/nouislider.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="pages/index.css">
+</head>
+<body>
+  <div class="page">
+    <section class="main">
+      <div class="result">
+        <h1 class="title">Квартиры</h1>
+
+        <div class="table">
+          <ul class="table-head">
+              <li class="table-head__item table-head__item_inline">
+                <p class="table-head__name" id="sort-plan">Планировка</p>
+              </li>
+              <li class="table-head__item table-head__item_inline">
+                <p class="table-head__name" id="sort-apartment">Квартира</p>
+              </li>
+              <li class="table-head__item">
+                <p class="table-head__name" id="sort-area">S, м<sup>2</sup></p>
+                <div class="table-head__buttons">
+                  <div class="table-head__button-image"></div>
+                  <div class="table-head__button-image"></div>
+                </div>
+              </li>
+              <li class="table-head__item">
+                <p class="table-head__name" id="sort-floor">Этаж</p>
+                <div class="table-head__buttons">
+                  <div class="table-head__button-image"></div>
+                  <div class="table-head__button-image"></div>
+                </div>
+              </li>
+              <li class="table-head__item_hidden">
+                <div class="table-head__item">
+                  <p class="table-head__name">Сдача</p>
+                  <div class="table-head__buttons">
+                    <div class="table-head__button-image"></div>
+                    <div class="table-head__button-image"></div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="table-head__item">
+                <p class="table-head__name" id="sort-price">Цена, &#8381;</p>
+                <div class="table-head__buttons">
+                  <div class="table-head__button-image"></div>
+                  <div class="table-head__button-image"></div>
+                </div>
+              </li>
+          </ul>
+          <!-- контейнер для карточек -->
+          <div class="apartment-content"></div></div>
+
+        <button type="button" class="result__load">Загрузить еще</button>
+      </div>
+
+      <form class="filter">
+        <div class="filter__room-buttons">
+          <button type="button" class="filter__room-button" data-rooms="1">1к</button>
+          <button type="button" class="filter__room-button" data-rooms="2">2к</button>
+          <button type="button" class="filter__room-button" data-rooms="3">3к</button>
+          <button type="button" class="filter__room-button" data-rooms="4">4к</button>
+        </div>
+
+        <div class="filter__range-block">
+          <h2 class="filter__title">Стоимость квартиры, &#8381;</h2>
+          <div class="filter__range-title">
+            <p class="filter__range-title_from" id="range-from-price"><span class="apartment-row__floor_opacity">от</span> <span class="apartment-row__price-from">5 500 000</span></p>
+            <p class="filter__range-title_to" id="range-to-price"><span class="apartment-row__floor_opacity">до</span> <span class="apartment-row__price-to">18 900 000</span></p>
+          </div>
+          <div class="filter__range" id="slider-price"></div>
+        </div>
+
+        <div class="filter__range-block">
+          <h2 class="filter__title">Площадь, м<sup>2</sup></h2>
+          <div class="filter__range-title">
+            <p class="filter__range-title_from"><span class="apartment-row__floor_opacity">от</span> <span class="apartment-row__area-from">33</span></p>
+            <p class="filter__range-title_to"><span class="apartment-row__floor_opacity">до</span> <span class="apartment-row__area-to">123</span></p>
+          </div>
+          <div class="filter__range" id="slider-area"></div>
+        </div>
+        <div class="reset">
+          <p class="reset__title">Сбросить параметры</p>
+          <button type="reset" class="reset__button"></button>
+        </div>
+      </form>
+
+
+    </section>
+    <button type="button" class="button-up"></button>
+  </div>
+
+  <template id="apartment-template">
+    <div class="apartment-row">
+      <div class="apartment-row__image"></div>
+      <p class="apartment-row__rooms"><span class="apartment-row__room"></span>-комнатная №
+        <span class="apartment-row__number"></span>
+      </p>
+      <p class="apartment-row__area">
+        <span class="area-current"></span>
+        <span class="area">м<sup>2</sup></span>
+      </p>
+      <p class="apartment-row__floor">
+        <span class="apartment-row__current-floor"></span>
+        <span class="apartment-row__floor_opacity">из
+          <!-- <span> -->
+          <span class="apartment-row__total-floor"></span>
+          <span class="floor">этаж</span>
+        </span>
+      </p>
+      <p class="apartment-row__price">
+        <span class="price-current"></span>
+        <span class="price">&#8381;</span>
+      </p>
+    </div>
+  </template>
+
+  <script src="./node_modules/nouislider/dist/nouislider.js"></script>
+  <!-- <script type="module" src="./data/apartments.js"></script> -->
+  <script type="module" src="./scripts/Api.js"></script>
+  <script type="module" src="./pages/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+@import '../components';
+
+.apartment-row {
+  display: grid;
+  grid-template-columns: 100px 2fr repeater(3, 1fr);
+  min-height: $size-120;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  color: $main-color;
+  font-size: $size-16;
+  line-height: $size-24;
+  padding-top: $size-16;
+  grid-template-areas:
+      "plan room area floor price";
+
+  &:last-child {
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  }
+
+  @media screen and (max-width: $size-1200) {
+    font-size: $size-14;
+    min-height: 112px;
+    box-sizing: border-box;
+    grid-template-columns: repeater(2, auto) repeater(2, 1fr) max-content;
+    gap: $size-16 20px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    grid-template-areas:
+      "room room room plan"
+      "area floor price plan";
+    grid-template-rows: repeater(3, 20px);
+    padding: $size-16 24px;
+  }
+
+  &__area {
+    font-family: $font-bold;
+    margin: 0;
+    grid-area: area;
+  }
+
+  &__floor {
+    font-family: $font-bold;
+    margin: 0;
+    grid-area: floor;
+
+    &_opacity {
+      display: inline-block;
+      font-size: $size-16;
+      line-height: $size-24;
+      opacity: .5;
+    }
+  }
+
+  &__image {
+    background-repeat: no-repeat;
+    margin: 7px;
+    margin-top: 0;
+    grid-area: plan;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+
+    @media screen and (max-width: $size-1200) {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      padding: $size-16 $size-24;
+      box-sizing: border-box;
+    }
+  }
+
+  &__rooms {
+    font-family: $font-bold;
+    margin: 0;
+    grid-area: room;
+
+    @media screen and (max-width: $size-1200) {
+      grid-column-end: 5;
+    }
+  }
+
+  &__price {
+    font-family: $font-bold;
+    margin: 0;
+    grid-area: price;
+
+    @media screen and (max-width: $size-1200) {
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+  }
+
+}

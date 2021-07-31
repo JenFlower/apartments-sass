@@ -1,0 +1,93 @@
+.filter {
+  background: -webkit-gradient(linear, left top, left bottom, from(#AEE4B2), to(#95D0A1));
+  background: linear-gradient(#AEE4B2, #95D0A1);
+  border-radius: 10px;
+  padding: 40px;
+  max-height: 372px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter {
+    max-height: 318px;
+    padding: 20px 19px;
+  }
+}
+
+.filter__range {
+  cursor: pointer;
+}
+
+.filter__range-block {
+  padding-bottom: 24px;
+}
+
+.filter__range-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns:  1fr 1fr;
+      grid-template-columns:  1fr 1fr;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter__range-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.filter__range-title_from {
+  margin: 0;
+}
+
+.filter__range-title_to {
+  margin: 0;
+}
+
+.filter__room-button {
+  background-color: #FFF;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filter__room-button:hover {
+  opacity: .5;
+}
+
+.filter__room-button_active {
+  background-color: #3EB57C;
+  color: #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 1px 28px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
+}
+
+.filter__room-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns:  44px 44px 44px 44px;
+      grid-template-columns:  44px 44px 44px 44px;
+  gap: 0 16px;
+  padding-bottom: 24px;
+}
+
+.filter__title {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter__title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

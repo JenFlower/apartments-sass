@@ -1,0 +1,26 @@
+@import '../components';
+
+.main {
+  border-radius: 30%;
+  margin: 0 auto;
+  padding: $size-96 $size-80;
+  display: grid;
+  grid-template-columns: auto $size-400;
+  gap: 0 $size-80;
+
+  @media screen and (max-width: $size-1200) {
+    grid-template-columns: auto 318px;
+    gap: 0 $size-20;
+    padding: $size-48 $size-54;
+  }
+
+  @media screen and (max-width: $size-860) {
+    grid-template-columns: 1fr;
+    gap: $size-20;
+    padding: $size-48 $size-54;
+  }
+}
+
+
+
+

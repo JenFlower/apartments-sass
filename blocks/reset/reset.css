@@ -1,0 +1,40 @@
+.reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 16px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+}
+
+.reset__title {
+  margin: 0;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .reset__title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.reset__button {
+  background: transparent;
+  border: none;
+  background-image: url("../../../images/reset.svg");
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.reset__button:hover {
+  background-image: url("../../../images/reset-green.svg");
+}

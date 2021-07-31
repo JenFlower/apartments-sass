@@ -1,0 +1,10 @@
+@import '../components';
+
+.price {
+  display: none;
+
+  @media screen and (max-width: $size-1200) {
+    display: inline;
+  }
+}
+

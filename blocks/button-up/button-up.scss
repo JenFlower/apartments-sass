@@ -1,0 +1,37 @@
+@import '../components';
+
+.button-up {
+  display: none;
+  background-color: $green-color;
+  width: $size-40;
+  height: $size-40;
+  border-radius: 50%;
+  position: fixed;
+  right: $size-32;
+  bottom: $size-32;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  &::before {
+    background-image: url('../../images/button-up.svg');
+    display: block;
+    content: '';
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: $size-15;
+    width: $size-10;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transition: .5s;
+    opacity: .5;
+  }
+
+  &_show {
+    display: block;
+  }
+}
+

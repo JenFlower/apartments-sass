@@ -1,0 +1,39 @@
+.result {
+  max-width: 800px;
+  color: #0B1739;
+}
+
+.result__load {
+  width: 156px;
+  height: 40px;
+  font-family: PTRootUIWebBold, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0B1739;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFF;
+  border: 1px rgba(11, 23, 57, 0.2) solid;
+  border-radius: 25px;
+  margin-top: 48px;
+  cursor: pointer;
+}
+
+.result__load:hover {
+  background-color: #3EB57C;
+  color: #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 0 1px 28px black, 0 7px 7px black;
+          box-shadow: 0 1px 28px black, 0 7px 7px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .result__load {
+    margin-top: 24px;
+  }
+}
+
+.result__load_disabled {
+  display: none;
+}

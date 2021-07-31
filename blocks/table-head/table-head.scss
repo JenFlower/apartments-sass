@@ -1,0 +1,78 @@
+@import '../components';
+
+.table-head {
+  display: grid;
+  grid-template-columns: $size-100 2fr repeater(3, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: $size-14;
+  line-height: $size-20;
+  vertical-align: top;
+  margin-bottom: $size-16;
+
+  @media screen and (max-width: $size-1200) {
+    grid-template-columns:repeater(4, max-content);
+    column-gap: $size-20;
+  }
+
+  &__button-image {
+    &:first-child {
+      margin: $size-5 0 1px;
+      height: 4px;
+      background-image: url('../../../images/arrow-up.svg');
+      background-repeat: no-repeat;
+      width: $size-8;
+    }
+    &:last-child {
+      margin: 1px 0 $size-5;
+      height: 4px;
+      background-repeat: no-repeat;
+      background-image: url('../../../images/arrow-down.svg');
+    }
+
+    &:first-child:hover {
+      background-image: url('../../../images/arrow-up-green.svg');
+    }
+    &:last-child:hover {
+      background-image: url('../../../images/arrow-down-green.svg');
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: $size-8;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &_hidden {
+      display: none;
+
+      @media screen and (max-width: $size-1200) {
+        display: inline;
+      }
+    }
+
+    &_inline {
+      display: inline;
+
+      @media screen and (max-width: $size-1200) {
+        display: none;
+      }
+    }
+  }
+
+  &__name {
+    margin: 0;
+
+    &:hover {
+      color: $green-color-active;
+      cursor: pointer;
+    }
+  }
+}

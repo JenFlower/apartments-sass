@@ -1,0 +1,15 @@
+@import '../components';
+
+.title {
+  font-family: $font-bold;
+  font-size: $size-54;
+  line-height: $size-54;
+  margin: 0;
+  padding-bottom: $size-48;
+
+  @media screen and (max-width: $size-1200) {
+    padding-bottom: $size-24;
+  }
+}
+
+

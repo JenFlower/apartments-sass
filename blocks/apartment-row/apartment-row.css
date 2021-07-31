@@ -1,0 +1,113 @@
+.apartment-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 2fr  1fr 1fr 1fr;
+      grid-template-columns: 100px 2fr  1fr 1fr 1fr;
+  min-height: 120px;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  color: #0B1739;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+      grid-template-areas: "plan room area floor price";
+}
+
+.apartment-row:last-child {
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+@media screen and (max-width: 1200px) {
+  .apartment-row {
+    font-size: 14px;
+    min-height: 112px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-grid-columns:  auto auto  1fr 1fr max-content;
+        grid-template-columns:  auto auto  1fr 1fr -webkit-max-content;
+        grid-template-columns:  auto auto  1fr 1fr max-content;
+    gap: 16px 20px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 8px;
+    margin-bottom: 4px;
+        grid-template-areas: "room room room plan" "area floor price plan";
+    -ms-grid-rows:  20px 20px 20px;
+        grid-template-rows:  20px 20px 20px;
+    padding: 16px 24px;
+  }
+}
+
+.apartment-row__area {
+  font-family: PTRootUIWebBold, Arial, Helvetica, sans-serif;
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: area;
+}
+
+.apartment-row__floor {
+  font-family: PTRootUIWebBold, Arial, Helvetica, sans-serif;
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: floor;
+}
+
+.apartment-row__floor_opacity {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: .5;
+}
+
+.apartment-row__image {
+  background-repeat: no-repeat;
+  margin: 7px;
+  margin-top: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: plan;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .apartment-row__image {
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 6;
+    padding: 16px 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.apartment-row__rooms {
+  font-family: PTRootUIWebBold, Arial, Helvetica, sans-serif;
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: room;
+}
+
+@media screen and (max-width: 1200px) {
+  .apartment-row__rooms {
+    grid-column-end: 5;
+  }
+}
+
+.apartment-row__price {
+  font-family: PTRootUIWebBold, Arial, Helvetica, sans-serif;
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: price;
+}
+
+@media screen and (max-width: 1200px) {
+  .apartment-row__price {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}

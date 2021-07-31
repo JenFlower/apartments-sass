@@ -1,0 +1,36 @@
+@import '../components';
+
+.reset {
+  display: flex;
+  align-items: center;
+  padding-left: $size-16;
+  padding-top: $size-5;
+  padding-bottom: $size-7;
+
+  &__title {
+    margin: 0;
+    padding-right: $size-8;
+    font-size: $size-14;
+    line-height: $size-20;
+
+    @media screen and (max-width: $size-1200) {
+      font-size: $size-13;
+      line-height: $size-18;
+    }
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    background-image: url('../../../images/reset.svg');
+    background-repeat: no-repeat;
+    height: $size-8;
+    width: $size-8;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      background-image: url('../../../images/reset-green.svg');
+    }
+  }
+}
