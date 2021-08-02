@@ -5,4 +5,4 @@
 * Загрузка квартир из файла .json
 * Просмотр квартир по фильтрам
 
-#gh-pages: https://jenflower.github.io/apartments-sass/
+# gh-pages: https://jenflower.github.io/apartments-sass/
