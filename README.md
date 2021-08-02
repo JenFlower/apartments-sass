@@ -1,5 +1,7 @@
 # Apartments SASS
+
 Проект https://github.com/JenFlower/apartments/, стили которого были переписаны с помощью препроцессора SASS.
+
 ## Функционал:
 * Адаптивная верстка HTML, CSS, JS по методологии БЭМ
 * Препроцессор SASS
